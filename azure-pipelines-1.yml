@@ -12,6 +12,7 @@ pool:
 variables:
 - group: "SECURE_TOKENS"
 - name: SNYKTOKEN
+  value: 78756843-b4e9-43e0-b0e9-e6123cc3e31c
 
 
 
