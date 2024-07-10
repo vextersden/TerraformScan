@@ -9,6 +9,13 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+- group: "SECURE_TOKENS"
+- name: SNYK_TOKEN
+
+
+
+
 steps:
 - script: |
     echo "Installing Snyk CLI..."
