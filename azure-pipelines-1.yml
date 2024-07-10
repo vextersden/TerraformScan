@@ -11,9 +11,8 @@ pool:
 
 variables:
 - group: "SECURE_TOKENS"
-- name: SNYKTOKEN
+- name: SNYK_TOKEN
   value: $[variables.SNYKTOKEN]
-
 
 
 
@@ -27,6 +26,7 @@ steps:
 - script: |
     echo "Verifying Snyk CLI installation..."
     snyk --version
+    export SNYK_TOKEN
     SNYK_TOKEN=78756843-b4e9-43e0-b0e9-e6123cc3e31c
     snyk auth 
   displayName: 'Verify Snyk CLI Installation'
