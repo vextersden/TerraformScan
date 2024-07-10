@@ -19,3 +19,8 @@ steps:
     echo "Verifying Snyk CLI installation..."
     snyk --version
   displayName: 'Verify Snyk CLI Installation'
+
+- script: |
+    echo "IAC scan.."
+    snyk iac test
+  displayName: 'RUN IAC SCAN'
