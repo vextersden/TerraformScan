@@ -25,7 +25,7 @@ steps:
 - script: |
     echo "Verifying Snyk CLI installation..."
     snyk --version
-    snyk auth = $(SNYK_TOKEN)
+    snyk auth 
   displayName: 'Verify Snyk CLI Installation'
 
 - script: |
